@@ -12,9 +12,7 @@ FROM m0elnx/ubuntu-32bit
 RUN	apt-get update && \
 	apt-get upgrade -y && \
 	apt-get install -y --no-install-recommends alsa-utils && \
-	apt-get install -y --no-install-recommends xorg && \
 	apt-get install -y --no-install-recommends nvidia-340 && \
-#	apt-get install -y --no-install-recommends mesa-utils && \
 	apt-get autoremove -y --purge && \
 	apt-get clean -y && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
