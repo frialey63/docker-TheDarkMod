@@ -5,7 +5,7 @@
 #
 # docker build -t tdm .
 # xhost +
-# docker run -ti --rm --net=host --privileged=true -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v /dev/snd:/dev/snd -v /home/paul:/home/paul tdm
+# docker run -ti --rm --net=host --ipc=host --privileged=true -v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 -v /dev/snd:/dev/snd -v /home/paul:/home/paul tdm
 
 FROM m0elnx/ubuntu-32bit
 
